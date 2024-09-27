@@ -21,7 +21,7 @@ struct MovieListView: View {
                     MediaPosterCarouselView(title: "Top Rated Movie", content: vm.topRated)
                 }
             }
-            .navigationTitle("Welcome")
+            .navigationTitle("Movies")
             .task {
                 if !vm.hasAppeared {
                     await vm.populateMovies()
